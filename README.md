@@ -22,5 +22,21 @@ a = performace.TestPerformace()
 a.test_random()
 ```
 
+```python
+from src.py_performace_poc import performace_cython
+
+a= performace_cython.TestPerformace()
+a.test_random()
+```
+
 ## Conclusion
 - Converting same piece of code into python package, did not made a difference in execution time 
+- Comiling with cython same piece of code, executed faster than normal python compiler
+- Execution in cython seems faster, needs more methods to test it out
+
+## Results
+- test_random func executed around 34 sec both by executing as a python file and building python package and importing and executing it.
+- test_random func tooks around 26 seconds by executing via cython compiler
+
+## Colloboration
+- Please add your methods and raise PR to compare execution time via different ways.
