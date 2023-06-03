@@ -9,7 +9,6 @@ Project to analyze execution time via different ways in python
 ## pip
 Project package at https://test.pypi.org/project/py-performance-poc/
 
-To test
 
 ## install
 
@@ -51,5 +50,5 @@ a.test_random()
 - test_random func executed around 34 sec both by executing as a python file and building python package and importing and executing it.
 - test_random func tooks around 26 seconds by executing via cython compiler
 
-## Colloboration
+## Collaboration
 - Please add your methods and raise PR to compare execution time via different ways.
