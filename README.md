@@ -2,6 +2,9 @@
 
 ## Desciption
 Project to analyze execution time via different ways in python
+- Normal python file execution
+- Building python package and running by importing it
+- Compiling it with cython and running by importing it
 
 ## pip
 Project package at https://test.pypi.org/project/py-performance-poc/
