@@ -122,6 +122,3 @@ class TestPerformace:
 
         execution_time = end_time - start_time
         print("Execution time:", execution_time, "seconds")
-
-a = TestPerformace()
-a.test_random()
