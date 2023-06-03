@@ -14,6 +14,16 @@ To test
 pip install -i https://test.pypi.org/simple/ py-performance-poc==0.0.3
 ```
 
+## Building cython files
+- Create a folder, and paste your whole code in file_name.pyx 
+- create setup.py and copy the contents similar from setup.py in the project
+- Building cython file
+```python
+python3 setup.py build_ext --inplace
+```
+- Execute it by importing via your console
+
+
 ## Usage
 
 ```python
