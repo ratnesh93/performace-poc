@@ -5,3 +5,5 @@ python_to_cython/__pycache__
 *.c
 src/py_performance_poc.egg-info
 tests/__pycache__
+src/py_performace_poc/__pycache__
+src/py_performace_poc/build
