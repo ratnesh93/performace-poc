@@ -1,2 +1,7 @@
 /.venv
 /dist
+python_to_cython/build
+python_to_cython/__pycache__
+*.c
+src/py_performance_poc.egg-info
+tests/__pycache__

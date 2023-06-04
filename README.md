@@ -41,6 +41,9 @@ python3 setup.py build_ext --inplace
 - create a <test_your_file_name>.py file.
 - Import your python class in the test file and call the method for computations.
 - Run above multiple times and record your execution times. 
+```python
+python path_to_your_file/test_your_file_name.py
+```
 - Now lets start cython programming
 - Create <your_cython_file_name>.pyx and paste the contents of the <your_file_name>.py file
 - Create setup.py and copy contents of python_to_cython/setup.py into it with modification of <your_cython_file_name>
@@ -52,6 +55,9 @@ python3 setup.py build_ext --inplace
 - Now create <test_your_cython_file_name>.py
 - Import your cython class in the test file and call the method for computations.
 - Run above multiple times and record your execution times. Run in same machine and in similar conditions.
+```python
+python path_to_your_file/test_your_cython_file_name.py
+```
 
 ## What is minimum file needed after build for cython to run the program
 - file_name.pyc
