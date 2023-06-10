@@ -89,16 +89,16 @@ python <path_to_project>/test_cython_performance.py
 ```
 
 ```python
-from py_performace_poc import performace
-a = performace.TestPerformace()
-a.test_random()
+from performance import Performance
+my_test_performance = Performance()
+my_test_performance.some_random_computations()
 ```
 
 ```python
-from src.py_performace_poc import performace_cython
+from cython_performance import Performance
 
-a= performace_cython.TestPerformace()
-a.test_random()
+my_test_performance = Performance()
+my_test_performance.some_random_computations()
 ```
 
 ## Conclusion
