@@ -32,12 +32,12 @@ python3 setup.py build_ext --inplace
 
 
 ## python_to_cython: Create your own and test it out
-- Create virtual environment which will be needed for installing python (Follow this if you are new: https://stackoverflow.com/questions/54106071/how-can-i-set-up-a-virtual-environment-for-python-in-visual-studio-code/68076478#68076478) 
+- Create virtual environment which will be needed for installing python [Follow this if you are new](https://stackoverflow.com/questions/54106071/how-can-i-set-up-a-virtual-environment-for-python-in-visual-studio-code/68076478#68076478) 
 - Activate the virtual environment
 - Create a folder <your_folder_name>
 - create am empty __init__.py file
 - create a <your_file_name>.py file
-- Paste content of python_to_cython/performance.py into it or create your own conent for computations
+- Paste [sample content](https://github.com/ratnesh93/performace-poc/blob/main/python_to_cython/performance.py) into it or create your own conent for computations
 - create a <test_your_file_name>.py file.
 - Import your python class in the test file and call the method for computations.
 - Run above multiple times and record your execution times. 
@@ -46,7 +46,17 @@ python path_to_your_file/test_your_file_name.py
 ```
 - Now lets start cython programming
 - Create <your_cython_file_name>.pyx and paste the contents of the <your_file_name>.py file
-- Create setup.py and copy contents of python_to_cython/setup.py into it with modification of <your_cython_file_name>
+- Create setup.py and add [below code](https://github.com/ratnesh93/performace-poc/blob/main/python_to_cython/setup.py) in it.
+```python
+from setuptools import setup, Extension
+from Cython.Build import cythonize
+
+extensions = [Extension("<your_cython_file_name>", ["<your_cython_file_name>.pyx"])]
+
+setup(
+    ext_modules = cythonize(extensions)
+)
+```
 - Now build your cython file
 ```python
 python3 setup.py build_ext --inplace
@@ -60,7 +70,7 @@ python path_to_your_file/test_your_cython_file_name.py
 ```
 
 ## Experiment
-|n | time (seconds)-python | time (seconds)-python | Performance Improvement (%) |
+|n | time (seconds)-python | time (seconds)-cython | Performance Improvement (%) |
 |--|--|--|--|
 | Average |35.367467|26.993737|23.67636|
 |--|--|--|--|
