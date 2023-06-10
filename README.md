@@ -59,12 +59,33 @@ python3 setup.py build_ext --inplace
 python path_to_your_file/test_your_cython_file_name.py
 ```
 
+## Experiment
+|n | time (seconds)-python | time (seconds)-python | Performance Improvement (%) |
+|--|--|--|--|
+| Average |35.367467|26.993737|23.67636|
+|1|34.81232|26.96337||
+|2|36.34826|26.79724||
+|3|36.06108|27.10838||
+|4|34.89695|27.13302||
+|5|34.80449|26.63584||
+|6|34.87149|27.09555||
+|7|35.90095|26.8832||
+|8|35.46488|27.66893||
+|9|35.02143|26.80006||
+|10|35.49282|26.85178||
+
 ## What is minimum file needed after build for cython to run the program
 - file_name.pyc
 - compiled_file_name.so
 - You only need your .so and .pyx file, copy that in your project and start using by importing it.
 
 ## Usage
+
+```python
+source <path_to_project>/.venv/bin/activate
+python <path_to_project>/test_performance.py
+python <path_to_project>/test_cython_performance.py
+```
 
 ```python
 from py_performace_poc import performace
@@ -85,8 +106,9 @@ a.test_random()
 - Execution in cython seems faster, needs more methods to test it out
 
 ## Results
-- test_random func executed around 34 sec both by executing as a python file and building python package and importing and executing it.
-- test_random func tooks around 26 seconds by executing via cython compiler
+- test_performance.py took on average of 35.367467 seconds
+- test_cython_performance.py took on average of 26.993737 seconds
+- Cython code executed 23.67636% faster on average.
 
 ## Collaboration
 - Please add your methods and raise PR to compare execution time via different ways.
