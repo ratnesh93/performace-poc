@@ -63,6 +63,7 @@ python path_to_your_file/test_your_cython_file_name.py
 |n | time (seconds)-python | time (seconds)-python | Performance Improvement (%) |
 |--|--|--|--|
 | Average |35.367467|26.993737|23.67636|
+|--|--|--|--|
 |1|34.81232|26.96337||
 |2|36.34826|26.79724||
 |3|36.06108|27.10838||
