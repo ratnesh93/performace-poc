@@ -1,6 +1,9 @@
 # performace-poc
 
 ## Desciption
+
+[Link to article](https://medium.com/@ratneshchandak/from-python-to-cython-turbocharging-your-code-for-lightning-fast-execution-b5e883898ac6)
+
 Project to analyze execution time via different ways in python
 - Normal python file execution
 - Building python package and running by importing it
