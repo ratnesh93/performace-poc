@@ -1,10 +1,12 @@
 # performace-poc
 
-## Desciption
+> **Note:** Repository name keeps the original spelling (`performace`).
 
-[Link to article](https://medium.com/@ratneshchandak/from-python-to-cython-turbocharging-your-code-for-lightning-fast-execution-b5e883898ac6)
+## Description
 
-Project to analyze execution time via different ways in python
+Companion repo for [From Python to Cython: turbocharging your code](https://medium.com/@ratneshchandak/from-python-to-cython-turbocharging-your-code-for-lightning-fast-execution-b5e883898ac6).
+
+Compare execution time across three approaches in Python:
 - Normal python file execution
 - Building python package and running by importing it
 - Compiling it with cython and running by importing it
